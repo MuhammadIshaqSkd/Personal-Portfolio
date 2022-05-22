@@ -1,0 +1,43 @@
+{% load static %}
+<footer class="footer_area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="footer_top flex-column">
+          <div class="footer_logo">
+            <a href="{% url 'home' %}">
+<!--              <img src="{% static 'img/logo2.png' %}" alt="logo">-->
+            </a>
+            <div class="d-lg-block d-none">
+              <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                <div class="collapse navbar-collapse offset">
+                  <ul class="nav navbar-nav menu_nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'about' %}">About</a></li>
+<!--                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'portfolio' %}">Portfolio</a></li>-->
+<!--                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'blog' %}">BLog</a></li>-->
+                    <li class="nav-item"><a class="nav-link text-white" href="{% url 'service' %}">Services </a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <div class="footer_social mt-lg-0 mt-4">
+            <a href="https://www.facebook.com/profile.php?id=100009560682857" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<!--            <a href="https://twitter.com/sajib1066" target="_blank"><i class="fab fa-twitter"></i></a>-->
+<!--            <a href="https://join.skype.com/invite/frQeKWH37d6y" target="_blank"><i class="fab fa-skype"></i></a>-->
+            <a href="https://github.com/MuhammadIshaqSkd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-ishaq-05889b19b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<!--            <a href="https://www.youtube.com/channel/UCsYH30yFN391zg-UUQ8BhTw" target="_blank"><i class="ti-youtube"></i></a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer_bottom justify-content-center">
+      <p class="col-lg-8 col-sm-12 footer-text">
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by Muhammad Ishaq
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+    </div>
+  </div>
+</footer>

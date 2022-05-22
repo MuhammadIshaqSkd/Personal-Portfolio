@@ -1,0 +1,192 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+  <!--================ Start Banner Area =================-->
+  <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+          <div class="container">
+              <div class="banner_content text-center">
+                  <h2>Muhammad IShaq</h2>
+                  <div class="page_link">
+                      <a href="{% url 'home' %}">Home</a>
+                      <a href="{% url 'about' %}">About</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--================ End Banner Area =================-->
+
+
+  <!--================ Start About Us Area =================-->
+	<section class="about_area section_gap">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="{% static 'img/m ishaq.jpg' %}" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<p class="top_text">Muhammad Ishaq<span></span></p>
+						<h2>
+							Full Stack Developer <br>
+							Django
+						</h2>
+						<p>
+							Writing well designed, testable, efficient code by using best software development practices. Creating website layout/user interfaces by using standard HTML/CSS practices. Integrating data from various back-end services and databases.
+						</p>
+						<a class="primary_btn" href="{% static 'Muhammad Ishaq Resume.pdf' %}"><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  <!--================ End About Us Area =================-->
+
+
+  <!--================ Start Testimonial Area =================-->
+	<section class="testimonial_area pb-xl-300px">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">`
+					<div class="main_title">
+						 <p class="top_text">Our Team Members <span></span></p>
+              <h2>Honourable Team Developers </h2>
+					</div>
+				</div>
+      </div>
+
+      <div class="owl-carousel owl-theme testimonial-slider ">
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                <img src="{% static 'img/testimonials/Muhammad Ibrahim.jpg' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="testi-right">
+                <h4>Muhammad Ibrahim</h4>
+                  <p><small>MERN Stack Developer</small></p>
+
+                  <p>To be a part of a growing company and to be able to contribute to the success of a team and be recognized for the results I produce, my work is always done to the highest standard possible with a positive attitude. My core competencies are Website Development using MERN STACK </p>
+                  <ul class="star_rating mt-4">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                 <img src="{% static 'img/testimonials/muzamil senior.jpg' %}" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="testi-right">
+                <h4>Muzammil Hussain </h4>
+                  <p><small>Full Stack Developer</small></p>
+
+                  <p>Experienced Ionic/Angular Developer with a demonstrated history of working in the information technology and services industry. Skilled in Mobile Application Development, Firebase, REST API. Strong engineering professional with a Bachelor of Science - BS focused in Software Engineering from International Islamic University Islamabad. </p>
+                   <ul class="star_rating mt-3">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="testi-img mb-4 mb-lg-0">
+                <img src="{% static 'img/testimonials/shabaz.jpg' %}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="testi-right">
+                  <h4>Shabaz Ajum</h4>
+                  <p><small> Graphic Designer</small></p>
+
+                  <p>Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience. </p>
+                  <ul class="star_rating mt-3">
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li><span><i class="fas fa-star"></i></span></li>
+                  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<!--================ End Testimonial Area =================-->
+
+
+  <!--================ Start Brands Area =================-->
+<!--	<section class="brands-area section_gap_bottom">-->
+<!--		<div class="container">-->
+<!--			<div class="row justify-content-center">-->
+<!--				<div class="col-lg-12">-->
+<!--					<div class="owl-carousel brand-carousel">-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo1.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo2.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo3.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo4.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo5.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--						&lt;!&ndash; single-brand &ndash;&gt;-->
+<!--						<div class="single-brand-item d-table">-->
+<!--							<div class="d-table-cell">-->
+<!--								<img src="{% static 'img/brands/logo3.png' %}" alt="">-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</section>-->
+	<!--================ End Brands Area =================-->
+{% endblock %}
